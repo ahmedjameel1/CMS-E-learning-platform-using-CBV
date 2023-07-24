@@ -8,3 +8,5 @@
 ### *-using redis.
 ### *-played a bit with docker.
 ### *-django debug toolbar.
+### *-implemented RESTApi using DRF.
+### *-using requests to consume the API.
