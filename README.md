@@ -10,3 +10,4 @@
 ### *-django debug toolbar.
 ### *-implemented RESTApi using DRF.
 ### *-using requests to consume the API.
+### *-using django-channels for async messages and real-time chat group and websockets.
