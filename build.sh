@@ -2,7 +2,8 @@
 # Exit on error
 set -o errexit
 
-set DJANGO_SETTINGS_MODULE=educa.settings.prod# Modify this line as needed for your package manager (pip, poetry, etc.)
+set DJANGO_SETTINGS_MODULE=educa.settings.prod
+
 pip install -r requirements.txt
 
 # Convert static asset files
