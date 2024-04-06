@@ -10,6 +10,6 @@ redis==4.3.4
 django-redisboard==8.3.0
 psycopg2-binary
 dj-database-url
-"whitenoise[brotli]"
+whitenoise
 gunicorn 
 uvicorn
