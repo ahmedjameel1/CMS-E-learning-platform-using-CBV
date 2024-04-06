@@ -2,8 +2,6 @@
 # Exit on error
 set -o errexit
 
-set DJANGO_SETTINGS_MODULE=educa.settings.prod
-
 pip install -r requirements.txt
 
 # Convert static asset files
