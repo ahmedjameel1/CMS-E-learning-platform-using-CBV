@@ -17,7 +17,6 @@ from .models import Course
 from .models import Module, Content
 from .models import Subject
 
-
 class ManageCourseListView(ListView):
     model = Course
     template_name = 'courses/manage/course/list.html'

@@ -4,6 +4,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.template.loader import render_to_string
 from .fields import OrderField
+# from gdstorage.storage import GoogleDriveStorage, GoogleDrivePermissionType, GoogleDrivePermissionRole, GoogleDriveFilePermission
 
 
 class Subject(models.Model):
@@ -93,16 +94,24 @@ class ItemBase(models.Model):
             {'item': self})
 
 
+# gd_storage = GoogleDriveStorage()
+
+# permission =  GoogleDriveFilePermission(
+#    GoogleDrivePermissionRole.READER,
+#    GoogleDrivePermissionType.USER,
+#    "foo@mailinator.com"
+# )
+
 class Text(ItemBase):
     content = models.TextField()
 
 
 class File(ItemBase):
-    file = models.FileField(upload_to='files')
-
+    file = models.FileField(upload_to='files/')
+    
 
 class Image(ItemBase):
-       file = models.FileField(upload_to='images')
+       file = models.FileField(upload_to='images/')
 
 
 class Video(ItemBase):
