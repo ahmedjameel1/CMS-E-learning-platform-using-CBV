@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'embed_video',
     # 'debug_toolbar',
     # 'redisboard',
-    'gdstorage',
+    # 'gdstorage',
 ]
 
 # GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = BASE_DIR / 'cmselearning-d0cdbc1e6846.json'
