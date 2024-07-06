@@ -95,12 +95,19 @@ WSGI_APPLICATION = 'educa.wsgi.application'
 #     )
 # }
 
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Replace this value with your local database's connection string.
+#         default='postgresql://postgres:postgres@127.0.0.1:5432/cms_db',
+#         conn_max_age=600
+#     )
+# }
+
 DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@127.0.0.1:5432/cms_db',
-        conn_max_age=600
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # Assuming db.sqlite3 is in your project directory
+    }
 }
 
 # Password validation
